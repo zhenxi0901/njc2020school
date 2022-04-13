@@ -33,4 +33,4 @@ def result():
     connection.close()
 
 if __name__ == '__main__':
-    app.run(port=5432, debug=True)
+    app.run(debug=True , use_reloader = True)
