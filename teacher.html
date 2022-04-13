@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body{ background-image: url("https://i0.wp.com/www.animegeek.com/wp-content/uploads/2021/12/Ranking-of-Kings-Season-2-release-date-Ousama-Ranking-Season-2-Osama-Ranking-Season-2-Anime.jpg?fit=1200%2C675&ssl=1");}
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th style="font-size: larger; color:black;">School &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:black;">Name &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:black;">Department &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:black;">Contact &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:black;">Address &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+            </tr>
+            
+            {% for item in lst %}
+            <tr>
+                <td style="font-size: larger; color:black;">{{ item.0 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:black ;">{{ item.1 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:black;">{{ item.2 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:black;">{{ item.3 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:black;">{{ item.4 }}&nbsp &nbsp</td>
+            </tr>
+            {% endfor %}
+
+            
+        </table>
+    </body>
+</html>
