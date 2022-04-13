@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body{ background-image: url("https://wallpaperaccess.com/full/7882369.jpg");}
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th style="font-size: larger; color:antiquewhite;">School &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:antiquewhite;">Name &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:antiquewhite;">Department &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:antiquewhite;">Contact &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                <th style="font-size: larger; color:antiquewhite;">Address &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+            </tr>
+            
+            {% for item in lst %}
+            <tr>
+                <td style="font-size: larger; color:antiquewhite;">{{ item.0 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:white ;">{{ item.1 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:antiquewhite;">{{ item.2 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:antiquewhite;">{{ item.3 }}&nbsp &nbsp</td>
+                <td style="font-size: larger; color:antiquewhite;">{{ item.4 }}&nbsp &nbsp</td>
+            </tr>
+            {% endfor %}
+
+            
+        </table>
+    </body>
+</html>
